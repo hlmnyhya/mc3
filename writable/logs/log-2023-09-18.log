@@ -1,0 +1,286 @@
+ERROR - 2023-09-18 04:11:15 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\laragon\www\mc3\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\mc3\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\mc3\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\mc3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\mc3\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\mc3\app\Database\Migrations\2023-09-18-041051_CreateUsersTable.php(43): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\mc3\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\laragon\www\mc3\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\mc3\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\mc3\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\mc3\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\mc3\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\mc3\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+CRITICAL - 2023-09-18 04:16:40 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:16:45 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:16:50 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:17:20 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:17:55 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:23:00 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(11): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:26:37 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(13): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:26:42 --> Undefined variable $title
+in APPPATH\Views\_partials_admin\header.php on line 5.
+ 1 APPPATH\Views\_partials_admin\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\_partials_admin\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_partials_admin\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('_partials_admin/header.php', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(13): view('_partials_admin/header.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 04:42:44 --> Cannot redeclare App\Models\User::$allowedFields
+in APPPATH\Models\User.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 04:42:48 --> Cannot redeclare App\Models\User::$allowedFields
+in APPPATH\Models\User.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 04:43:53 --> Cannot redeclare App\Models\User::$allowedFields
+in APPPATH\Models\User.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 04:43:55 --> Cannot redeclare App\Models\User::$allowedFields
+in APPPATH\Models\User.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-18 05:12:31 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:13:25 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:13:33 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:14:02 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:14:07 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:14:40 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:15:56 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:16:47 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:17:08 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:17:14 --> Invalid file: "admin/transaksi/produk/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/produk/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/produk/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 05:18:22 --> Invalid file: "admin/transaksi/_partials_transaksi/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi/_partials_transaksi/footer.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/transaksi/_partials_transaksi/footer.php', [], true)
+ 3 APPPATH\Controllers\Admin\Transaksi\PenjualanController.php(21): view('admin/transaksi/_partials_transaksi/footer.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi\PenjualanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 14:53:02 --> mysqli_sql_exception: Referencing column 'pelanggan_id' and referenced column 'id' in foreign key constraint 'keranjang_pelanggan_id_foreign' are incompatible. in C:\laragon\www\mc3\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\mc3\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\mc3\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\mc3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\mc3\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\mc3\app\Database\Migrations\2023-09-18-144806_CreateKeranjang.php(34): CodeIgniter\Database\Forge->createTable('keranjang')
+#5 C:\laragon\www\mc3\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateKeranjang->up()
+#6 C:\laragon\www\mc3\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\mc3\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\mc3\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\mc3\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\mc3\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\mc3\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-09-18 14:54:10 --> mysqli_sql_exception: Referencing column 'pelanggan_id' and referenced column 'id' in foreign key constraint 'keranjang_pelanggan_id_foreign' are incompatible. in C:\laragon\www\mc3\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\mc3\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\mc3\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\mc3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\mc3\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\mc3\app\Database\Migrations\2023-09-18-144806_CreateKeranjang.php(34): CodeIgniter\Database\Forge->createTable('keranjang')
+#5 C:\laragon\www\mc3\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateKeranjang->up()
+#6 C:\laragon\www\mc3\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\mc3\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\mc3\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\mc3\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\mc3\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\mc3\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-09-18 14:54:48 --> mysqli_sql_exception: Referencing column 'produk_id' and referenced column 'id' in foreign key constraint 'keranjang_produk_id_foreign' are incompatible. in C:\laragon\www\mc3\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\mc3\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\laragon\www\mc3\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\laragon\www\mc3\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\laragon\www\mc3\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\laragon\www\mc3\app\Database\Migrations\2023-09-18-144806_CreateKeranjang.php(35): CodeIgniter\Database\Forge->createTable('keranjang')
+#5 C:\laragon\www\mc3\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateKeranjang->up()
+#6 C:\laragon\www\mc3\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\mc3\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\mc3\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\mc3\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\mc3\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\mc3\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\mc3\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
