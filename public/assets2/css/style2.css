@@ -1,0 +1,35 @@
+/* CSS untuk dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Gaya tombol dropdown */
+.dropdown .btn-secondary {
+    background-color: #007BFF;
+    /* Warna latar belakang tombol */
+    color: #ffffff;
+    /* Warna teks tombol */
+}
+
+/* Gaya item dropdown */
+.dropdown .dropdown-item.action {
+    background-color: #FFC107;
+    /* Warna latar belakang item (Action) */
+    color: #000000;
+    /* Warna teks item (Action) */
+}
+
+.dropdown .dropdown-item.another-action {
+    background-color: #28A745;
+    /* Warna latar belakang item (Another action) */
+    color: #ffffff;
+    /* Warna teks item (Another action) */
+}
+
+.dropdown .dropdown-item.something-else {
+    background-color: #DC3545;
+    /* Warna latar belakang item (Something else here) */
+    color: #ffffff;
+    /* Warna teks item (Something else here) */
+}
